@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-beige': '#f5f1eb',
+                        'brand-brown': '#8b7355',
+                        'brand-dark': '#2a2a2a',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+         
+                        url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .bag-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-brand-dark">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.jpg" class="w-8 h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 alt=">
+
+
+                <!-- <h1 class="text-2xl font-bold text-brand-brown">INSIGHT</h1> -->
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="font-medium hover:text-brand-brown transition-all">Home</a>
+                <a href="#" class="font-medium hover:text-brand-brown transition-all">Collections</a>
+                <a href="#" class="font-medium hover:text-brand-brown transition-all">About</a>
+                <a href="#" class="font-medium hover:text-brand-brown transition-all">Contact</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <button class="p-2 hover:text-brand-brown transition-all">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="p-2 hover:text-brand-brown transition-all">
+                    <i class="fas fa-shopping-bag"></i>
+                </button>
+                <button class="md:hidden p-2 hover:text-brand-brown transition-all">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Insight Your Style</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8">Discover our premium collection of bags designed for the modern lifestyle.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-white text-brand-dark px-8 py-3 rounded-full font-medium hover:bg-brand-beige transition-all">Shop Now</button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-brand-dark transition-all">Explore Collections</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-16 bg-brand-beige">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Collections</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Collection 1 -->
+                <div class="bg-white rounded-lg overflow-hidden bag-shadow transition-all hover:scale-105">
+                    <div class="h-64 bg-cover bg-center" 
+                              
+                    style="background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Leather Tote Bags</h3>
+                        <p class="text-gray-600 mb-4">Elegant and spacious totes for everyday use.</p>
+                        <a href="#" class="text-brand-brown font-medium hover:underline">Explore →</a>
+                    </div>
+                </div>
+                
+                <!-- Collection 2 -->
+                <div class="bg-white rounded-lg overflow-hidden bag-shadow transition-all hover:scale-105">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Backpacks</h3>
+                        <p class="text-gray-600 mb-4">Functional and stylish backpacks for urban explorers.</p>
+                        <a href="#" class="text-brand-brown font-medium hover:underline">Explore →</a>
+                    </div>
+                </div>
+                
+                <!-- Collection 3 -->
+                <div class="bg-white rounded-lg overflow-hidden bag-shadow transition-all hover:scale-105">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1591561954557-26941169b49e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Crossbody Bags</h3>
+                        <p class="text-gray-600 mb-4">Compact and convenient bags for on-the-go.</p>
+                        <a href="#" class="text-brand-brown font-medium hover:underline">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Best Sellers</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden bag-shadow transition-all hover:scale-105">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1594223274512-ad4803739b7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80');"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Classic Leather Tote</h3>
+                        <p class="text-gray-600 text-sm mb-2">Premium full-grain leather</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">2000</span>
+                            <button class="bg-brand-brown text-white px-3 py-1 rounded text-sm hover:bg-brand-dark transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden bag-shadow transition-all hover:scale-105">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80');"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Urban Explorer Backpack</h3>
+                        <p class="text-gray-600 text-sm mb-2">Waterproof & laptop compartment</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">2500</span>
+                            <button class="bg-brand-brown text-white px-3 py-1 rounded text-sm hover:bg-brand-dark transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden bag-shadow transition-all hover:scale-105">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Minimalist Crossbody</h3>
+                        <p class="text-gray-600 text-sm mb-2">Compact design with multiple pockets</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">1500</span>
+                            <button class="bg-brand-brown text-white px-3 py-1 rounded text-sm hover:bg-brand-dark transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg overflow-hidden bag-shadow transition-all hover:scale-105">
+                    <div class="h-56 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80');"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Weekender Duffle</h3>
+                        <p class="text-gray-600 text-sm mb-2">Spacious travel companion</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">2500</span>
+                            <button class="bg-brand-brown text-white px-3 py-1 rounded text-sm hover:bg-brand-dark transition-all">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button class="border-2 border-brand-brown text-brand-brown px-8 py-3 rounded-full font-medium hover:bg-brand-brown hover:text-white transition-all">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-brand-beige">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Our Bags</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 bag-shadow">
+                        <i class="fas fa-award text-3xl text-brand-brown"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Premium Quality</h3>
+                    <p class="text-gray-600">Crafted with the finest materials and attention to detail.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 bag-shadow">
+                        <i class="fas fa-truck text-3xl text-brand-brown"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Free Shipping</h3>
+                    <p class="text-gray-600">Free worldwide shipping on all orders over 5000.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 bag-shadow">
+                        <i class="fas fa-shield-alt text-3xl text-brand-brown"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Warranty</h3>
+                    <p class="text-gray-600">2-year warranty on all our products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-brand-brown text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="max-w-xl mx-auto mb-6">Subscribe to our newsletter for exclusive offers, new arrivals, and style tips.</p>
+            
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg text-gray-800 focus:outline-none">
+                <button class="bg-brand-dark px-6 py-3 rounded-r-lg font-medium hover:bg-black transition-all">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">INSIGHT</h3>
+                    <p class="text-gray-400">Premium bags for the modern lifestyle. Crafted with care, designed for life.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-all">All Bags</a></li>
+                        <li><a href="#" class="hover:text-white transition-all">Tote Bags</a></li>
+                        <li><a href="#" class="hover:text-white transition-all">Backpacks</a></li>
+                        <li><a href="#" class="hover:text-white transition-all">Crossbody Bags</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-all">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-all">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-white transition-all">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition-all">Warranty</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-brown transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-brown transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-brown transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-brown transition-all">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 INSIGHT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+```
